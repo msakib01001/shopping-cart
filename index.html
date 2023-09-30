@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <div class="container">
+        <div class="products-container">
+            <div class="product">
+                <h5>Apple Watch</h5>
+                <img src="img/watch.jpg" alt="">
+                <p>Price: $467.00</p>
+                <button onclick="addToCart('Apple Watch', 467.00)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h5>Iphone 14 pro</h5>
+                <img src="img/iphone.jpg" alt="">
+                <p>Price: $1185.00</p>
+                <button onclick="addToCart('Iphone 14 pro', 1185.00)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h5>AirPod Pro</h5>
+                <img src="img/airpod.jpg" alt="">
+                <p>Price: $231.00</p>
+                <button onclick="addToCart('AirPod Pro', 231.00)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h5>Macbook Air</h5>
+                <img src="img/macbook.jpg" alt="">
+                <p>Price: $1567.00</p>
+                <button onclick="addToCart('Macbook Air', 1567.00)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Cart</h2>
+            <hr>
+            <div id="cart-items"></div>
+            <div class="cart-total">Total: $<span id="cart-total">0.00</span></div>
+        </div>
+    </div>
+
+    <script src="index.js">
+    </script>
+</body>
+</html>
